@@ -1,4 +1,4 @@
-# jossuema.me
+# jossuema.tech
 
 Personal portfolio, built with [Astro](https://astro.build). Project cards
 are rendered from [`../data/projects.yaml`](../data/projects.yaml); the rest

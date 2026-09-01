@@ -18,7 +18,7 @@ publications and applications.
 | Profile | URL | Status |
 |---|---|---|
 | GitHub | https://github.com/jossuema | ✅ |
-| Website | TODO(jossuema): confirm jossuema.me vs jossuema.tech (README says .tech, site config says .me) | ⚠️ |
+| Website | https://jossuema.tech (domain on Namecheap, hosted on GitHub Pages) | ✅ |
 | ORCID | TODO(jossuema): **register** — required by most journals incl. MDPI; urgent given the *Forests* submission | 📨 |
 | Google Scholar | TODO(jossuema): create once first paper is indexed | 📨 |
 | LinkedIn | TODO(jossuema): publish handle (README has a commented-out badge waiting) | 📨 |

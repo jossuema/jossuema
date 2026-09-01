@@ -1,0 +1,90 @@
+---
+import type { Project } from '../lib/projects';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const links = Object.entries(project.links ?? {});
+---
+
+<article class="card project-card">
+  <div class="project-top mono">
+    <span class="project-area">{project.area}</span>
+    {project.year && <span class="project-year">{project.year}</span>}
+  </div>
+  <h3 class="project-name">{project.name}</h3>
+  <p class="project-tagline">{project.tagline}</p>
+  <p class="project-desc">{project.description}</p>
+  <div class="project-stack">
+    {project.stack.map((tech) => <span class="chip">{tech}</span>)}
+  </div>
+  {
+    links.length > 0 && (
+      <div class="project-links mono">
+        {links.map(([label, url]) => (
+          <a href={url} rel="noopener">
+            {label} ↗
+          </a>
+        ))}
+      </div>
+    )
+  }
+</article>
+
+<style>
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    height: 100%;
+  }
+
+  .project-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .project-area {
+    color: var(--accent);
+  }
+
+  .project-year {
+    color: var(--faint);
+  }
+
+  .project-name {
+    font-size: 1.15rem;
+  }
+
+  .project-tagline {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin-top: -0.35rem;
+  }
+
+  .project-desc {
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+
+  .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.8rem;
+    padding-top: 0.35rem;
+  }
+</style>

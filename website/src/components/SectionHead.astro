@@ -1,0 +1,24 @@
+---
+interface Props {
+  num: string;
+  title: string;
+  id?: string;
+  as?: 'h1' | 'h2';
+}
+
+const { num, title, id, as: Heading = 'h2' } = Astro.props;
+---
+
+<div class="section-head" id={id}>
+  <span class="num" aria-hidden="true">{num} /</span>
+  <Heading class="head-title">{title}</Heading>
+  <span class="rule" aria-hidden="true"></span>
+</div>
+
+<style>
+  /* Same visual size regardless of heading level (h1 only on subpages). */
+  .head-title {
+    font-size: 1.45rem;
+    white-space: nowrap;
+  }
+</style>

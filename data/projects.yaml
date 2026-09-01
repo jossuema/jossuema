@@ -1,0 +1,104 @@
+# Structured project data — single source of truth for the website.
+# Mirrors knowledge/projects/. Keep both in sync.
+# Fields: id, name, tagline, description, year, area, stack[], links{}, featured
+
+projects:
+  - id: treeseg-als
+    name: TreeSeg-ALS
+    tagline: Deep-learning tree detection in airborne LiDAR
+    description: >-
+      Inventory-anchored evaluation of deep-learning individual tree
+      detection in airborne laser scanning (ALS), with label-efficient
+      cross-domain transfer in alpine forests. Reproducibility code for a
+      manuscript submitted to Forests (MDPI).
+    year: ""  # TODO(jossuema): project years not yet sourced
+    area: Research · 3D deep learning
+    stack: [Python, PyTorch, PointNet++]
+    links:
+      repo: https://github.com/jossuema/treeseg-als
+    featured: true
+
+  - id: sisca
+    name: SISCA
+    tagline: BLE access control with on-device face recognition
+    description: >-
+      Intelligent Control Access and Security System for UTMACH classrooms.
+      End to end: ESP32 (NimBLE) firmware, native Android & iOS apps with
+      on-device face recognition (ML Kit + TFLite) and biometric auth, and a
+      FastAPI REST backend.
+    year: "2024–2025"
+    area: IoT · Edge AI
+    stack: [Kotlin, SwiftUI, C++, FastAPI, TFLite]
+    links:
+      android: https://github.com/jossuema/sisca-mobile
+      ios: https://github.com/jossuema/sisca-mobile-ios
+      firmware: https://github.com/jossuema/sisca-esp-platformIO
+      api: https://github.com/jossuema/API-SISCA
+    featured: true
+
+  - id: mangrovenet
+    name: MangroveNet
+    tagline: Mangrove ecosystem mapping from satellite imagery
+    description: >-
+      U²-Net model for mangrove segmentation using Landsat 7, 8 and
+      Sentinel-2 imagery. CFMASK preprocessing to remove clouds and shadows;
+      optimized for multispectral segmentation with RGB, NIR, SWIR-1 and
+      SWIR-2 bands.
+    year: "2024"
+    area: Remote sensing
+    stack: [Python, U²-Net, Landsat, Sentinel-2]
+    links: {}
+    featured: true
+
+  - id: yolo-sahi
+    name: YOLO + SAHI
+    tagline: Small-object detection in urban aerial imagery
+    description: >-
+      Improving small-object detection with YOLO and Slicing Aided Hyper
+      Inference, evaluated on VisDrone with real mAP metrics. Talk & demo
+      for FLISOL 2026.
+    year: "2026"
+    area: Object detection
+    stack: [Python, YOLO, SAHI]
+    links:
+      repo: https://github.com/jossuema/yolo-sahi-flisol2026
+    featured: true
+
+  - id: aqualens
+    name: AquaLens AI
+    tagline: Fish detection and counting in underwater video
+    description: >-
+      Desktop app that detects and counts fish in underwater video with a
+      two-phase OpenCV + YOLO pipeline.
+    year: ""
+    area: Computer vision
+    stack: [Python, OpenCV, YOLO]
+    links:
+      repo: https://github.com/jossuema/aqualens
+    featured: false
+
+  - id: homicide-geoclustering
+    name: Homicide geoclustering in Ecuador
+    tagline: Comparative spatial clustering on government data
+    description: >-
+      Comparative analysis with KMeans, DBSCAN and HDBSCAN on government
+      homicide data to identify location clusters where homicides spread
+      with a certain density and follow similar patterns.
+    year: "2025"
+    area: Spatial data science
+    stack: [Python, Scikit-learn, HDBSCAN]
+    links: {}
+    featured: false
+
+  - id: buzon-utmach
+    name: Buzón Inteligente UTMACH
+    tagline: University participation platform
+    description: >-
+      Platform for complaints, suggestions and proposals at UTMACH, with an
+      admin analytics dashboard.
+    year: ""
+    area: Full-stack web
+    stack: [Next.js, Prisma, PostgreSQL]
+    links:
+      repo: https://github.com/jossuema/buzon-electronico-utmach
+    featured: false

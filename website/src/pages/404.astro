@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="404 — Josué Malla" description="Page not found.">
+  <section class="section">
+    <div class="container nf">
+      <p class="mono nf-code">
+      <span class="prompt">$</span> curl jossuema.me<span id="nf-path">/404</span>
+    </p>
+    <script>
+      const el = document.getElementById('nf-path');
+      if (el) el.textContent = location.pathname;
+    </script>
+      <h1>404 — not found</h1>
+      <p class="nf-p">This route doesn't resolve. Try the <a href="/">home page</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .nf {
+    padding-top: 4rem;
+  }
+
+  .nf-code {
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .prompt {
+    color: var(--accent);
+  }
+
+  h1 {
+    margin-bottom: 0.6rem;
+  }
+
+  .nf-p {
+    color: var(--muted);
+  }
+</style>

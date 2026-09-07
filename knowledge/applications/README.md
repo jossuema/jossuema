@@ -9,7 +9,7 @@ what was submitted — accepted materials become reusable templates.
 
 | Opportunity | Type | Deadline | Requirements | Status | Notes |
 |---|---|---|---|---|---|
-| TODO(jossuema) | — | — | — | — | — |
+| [Boot Camp Legislativo 2026](2026-boot-camp-legislativo.md) — Asamblea Nacional | Formación en participación legislativa | TODO(jossuema): confirmar | CV ✅ · cédula · foto · certificado de matrícula · carta de motivación · video 1 min | En preparación | CV en español ya listo |
 
 ## Past applications
 

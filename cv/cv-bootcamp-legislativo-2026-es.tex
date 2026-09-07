@@ -1,0 +1,257 @@
+% ---------------------------------------------------------------------------
+% Hoja de vida — Manuel Josué Malla Campoverde
+% Versión en español adaptada a la convocatoria "Boot Camp Legislativo 2026"
+% (Asamblea Nacional del Ecuador). Mantiene el formato del CV maestro en
+% inglés (cv/cv.pdf) y reordena el contenido para destacar liderazgo,
+% participación ciudadana e impacto público.
+%
+% Compilar con:  pdflatex cv-bootcamp-legislativo-2026-es.tex
+% ---------------------------------------------------------------------------
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}        % tipografía vectorial (evita fuentes bitmap)
+\usepackage[spanish,es-noshorthands,es-nolists,es-noquoting]{babel}
+\usepackage[left=0.7in,right=0.7in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+% --- Encabezados de sección: negrita + línea horizontal --------------------
+\titleformat{\section}
+  {\vspace{2pt}\bfseries\normalsize}
+  {}{0em}{}
+  [\vspace{-7pt}\rule{\textwidth}{0.9pt}\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{6pt}{2pt}
+
+% --- Utilidades ------------------------------------------------------------
+% Fila con texto a la izquierda y a la derecha
+\newcommand{\fila}[2]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    #1 & #2 \\
+  \end{tabular*}%
+}
+
+% Encabezado de una entrada: cargo/título + fecha, luego organización + lugar
+\newcommand{\entrada}[4]{%
+  \fila{\textbf{#1}}{#2}\\[1pt]
+  \fila{\textit{#3}}{\textit{#4}}\vspace{1pt}%
+}
+
+% Lista de viñetas compacta
+\newenvironment{vinetas}
+  {\begin{itemize}[leftmargin=1.4em,label=$\bullet$,itemsep=0.5pt,topsep=1pt,parsep=0pt,partopsep=0pt]}
+  {\end{itemize}\vspace{1pt}}
+
+\begin{document}
+
+% =========================== ENCABEZADO ====================================
+\begin{center}
+  {\LARGE \textbf{MANUEL JOSUÉ MALLA CAMPOVERDE}}\\[2pt]
+  {\small Representante estudiantil $\cdot$ Datos y participación ciudadana}\\[2pt]
+  Machala, El Oro, Ecuador $\diamond$ \href{mailto:mmalla1@outlook.com}{mmalla1@outlook.com}
+  $\diamond$ +593 97 948 9503 $\diamond$ \href{https://jossuema.tech}{jossuema.tech}
+\end{center}
+\vspace{-4pt}
+
+% ============================= PERFIL ======================================
+\section*{PERFIL}
+
+Estudiante de Ingeniería en Tecnologías de la Información, con interés en el
+vínculo entre tecnología, innovación y transformación social. Mi trayectoria
+combina el desarrollo de soluciones tecnológicas, la investigación aplicada,
+la representación estudiantil ante la Asamblea de Educación Superior de la
+Universidad Técnica de Machala y la participación en iniciativas educativas y
+comunitarias. Busco fortalecer mis capacidades de participación ciudadana y
+adquirir formación legislativa para contribuir al diseño de soluciones que
+respondan a las necesidades de los jóvenes y las comunidades del Ecuador.
+
+% =============== LIDERAZGO Y PARTICIPACIÓN CIUDADANA =======================
+\section*{LIDERAZGO Y PARTICIPACIÓN CIUDADANA}
+
+\entrada{Representante estudiantil ante la Asamblea de Educación Superior}{noviembre 2025 -- actualidad}
+        {Universidad Técnica de Machala (UTMACH)}{Machala, Ecuador}
+\begin{vinetas}
+  \item Represento a los estudiantes en espacios institucionales de educación
+        superior.
+  \item Gestiono alianzas con instituciones públicas y privadas para
+        respaldar iniciativas educativas estudiantiles.
+\end{vinetas}
+
+\entrada{Docente voluntario de fundamentos de programación}{marzo -- abril 2025}
+        {Municipio de Huaquillas}{Huaquillas, Ecuador}
+\begin{vinetas}
+  \item Impartí un curso introductorio de programación en Python a jóvenes
+        estudiantes, en alianza con el gobierno local, para fomentar la
+        alfabetización digital en la comunidad.
+\end{vinetas}
+
+\entrada{Embajador estudiantil de Microsoft Learn}{enero 2024 -- actualidad}
+        {Microsoft}{Machala, Ecuador}
+\begin{vinetas}
+  \item Promuevo la comunidad tecnológica y el aprendizaje entre pares
+        mediante talleres de inteligencia artificial y ciencia de datos.
+\end{vinetas}
+
+\entrada{Voluntario organizador --- conferencia PhawAI y TaReCDa 2025}{junio -- noviembre 2025}
+        {Comunidad de inteligencia artificial y ciencia de datos}{Arequipa, Perú}
+\begin{vinetas}
+  \item Apoyé la organización de la conferencia de inteligencia artificial y
+        ciencia de datos PhawAI + TaReCDa 2025.
+  \item Colaboré con el equipo organizador del reto de Somos NLP, comunidad
+        hispanohablante de procesamiento de lenguaje natural (mayo 2025).
+\end{vinetas}
+
+\entrada{Miembro del equipo de intercambios de voluntariado internacional}{febrero -- junio 2024}
+        {AIESEC en Ecuador}{Machala, Ecuador}
+\begin{vinetas}
+  \item Apoyé el reclutamiento y la coordinación de voluntarios para
+        proyectos internacionales vinculados a los Objetivos de Desarrollo
+        Sostenible (ODS).
+\end{vinetas}
+
+% =========================== EDUCACIÓN =====================================
+\section*{EDUCACIÓN}
+
+\entrada{Ingeniería en Tecnologías de la Información}{2022 -- 2027}
+        {Universidad Técnica de Machala}{Machala, Ecuador}
+Asignaturas relevantes: probabilidad y estadística, análisis matemático,
+métodos numéricos, bases de datos, ingeniería de software y seguridad de la
+información.
+\vspace{2pt}
+
+\entrada{Especialista en Decisiones Basadas en Datos}{agosto 2025 -- marzo 2026}
+        {Escuela Superior Politécnica del Litoral (ESPOL)}{Guayaquil, Ecuador}
+Programa cursado con beca. Asignaturas: SQL y optimización de consultas,
+Python para analítica de datos, inteligencia de negocios, visualización de
+datos e IA generativa aplicada a la analítica.
+\vspace{2pt}
+
+\entrada{Programa de verano en matemática aplicada}{semestre 2024-II}
+        {Escuela de Matemática Aplicada de la FGV (FGV EMAp)}{Río de Janeiro, Brasil}
+Asignaturas: aprendizaje automático aplicado a sistemas de recomendación,
+métodos de optimización en Julia, redes complejas aplicadas a la epidemiología
+y regresión bayesiana aplicada.
+
+% ====================== EXPERIENCIA PROFESIONAL ============================
+\section*{EXPERIENCIA PROFESIONAL}
+
+\entrada{Ingeniero de aprendizaje automático (medio tiempo)}{noviembre 2025 -- actualidad}
+        {LarvIA}{Machala, Ecuador}
+\begin{vinetas}
+  \item Desarrollo, entrenamiento y despliegue de modelos de visión por
+        computadora en equipos que procesan la información directamente en
+        campo, sin conexión permanente a internet.
+\end{vinetas}
+
+\entrada{Pasante de investigación en aprendizaje automático y ciencia de datos}{enero -- febrero 2026}
+        {CNPEM --- Laboratorio Nacional de Nanotecnología del Brasil}{Campinas, Brasil}
+\begin{vinetas}
+  \item Análisis de datos de sensores electroquímicos y desarrollo de modelos
+        para detectar patrones en sus mediciones, en un laboratorio nacional
+        de investigación.
+\end{vinetas}
+
+\entrada{Pasante de ingeniería de aprendizaje automático}{mayo -- octubre 2025}
+        {LarvIA}{Machala, Ecuador}
+\begin{vinetas}
+  \item Diseño y despliegue de sistemas de análisis automatizado de imágenes
+        para la optimización del cultivo de camarón en el Ecuador y en
+        Latinoamérica, sector clave para el empleo y las exportaciones del
+        país.
+  \item Aplicación de técnicas de fotogrametría para obtener medidas reales a
+        partir de fotografías tomadas con teléfonos móviles.
+\end{vinetas}
+
+\entrada{Desarrollador full-stack junior}{febrero -- mayo 2025}
+        {Ejercicio profesional independiente}{Machala, Ecuador}
+\begin{vinetas}
+  \item Desarrollo de un panel de administración empresarial y de un sistema
+        de gestión de información, junto con un asistente conversacional para
+        el agendamiento de reuniones a través de WhatsApp.
+\end{vinetas}
+
+\entrada{Pasante de desarrollo de software}{octubre 2024 -- febrero 2025}
+        {Universidad Técnica de Machala --- Departamento de TI}{Machala, Ecuador}
+\begin{vinetas}
+  \item Diseño de la arquitectura del Sistema Inteligente de Control de
+        Acceso y Seguridad (SISCA) para las aulas de las facultades del campus
+        principal de la universidad pública.
+  \item Diseño de la aplicación móvil utilizada por docentes y personal
+        administrativo para el acceso a las aulas.
+\end{vinetas}
+
+% ======================== PROYECTOS DE IMPACTO =============================
+\section*{PROYECTOS DE IMPACTO}
+
+\begin{vinetas}
+  \item \textbf{Análisis de conglomerados geoespaciales de homicidios en el
+        Ecuador: comparación de los métodos KMeans, DBSCAN y HDBSCAN} (2025)\\
+        Investigación desarrollada a partir de datos gubernamentales de
+        homicidios con el fin de identificar conglomerados territoriales y
+        zonas donde el fenómeno se concentra con mayor intensidad y sigue
+        patrones similares. Es un ejercicio de análisis de datos públicos con
+        potencial aplicación al estudio de problemas de seguridad ciudadana y
+        a la focalización territorial de políticas.
+
+  \item \textbf{Buzón Inteligente UTMACH: plataforma de participación
+        universitaria}\\
+        Plataforma web para la recepción de quejas, sugerencias y propuestas
+        de la comunidad universitaria, con un tablero analítico para su
+        seguimiento. El proyecto busca acercar los mecanismos de participación
+        a los estudiantes y sistematizar sus opiniones para el análisis
+        institucional.
+
+  \item \textbf{MangroveNet: mapeo y monitoreo de ecosistemas de manglar}
+        (2024)\\
+        Modelo de aprendizaje profundo para la identificación de manglares a
+        partir de imágenes satelitales Landsat y Sentinel-2. Permite
+        monitorear a bajo costo un ecosistema costero estratégico para el
+        Ecuador, con aplicaciones en conservación y control ambiental.
+\end{vinetas}
+
+% =================== RECONOCIMIENTOS Y DISTINCIONES ========================
+\section*{RECONOCIMIENTOS Y DISTINCIONES}
+
+\begin{vinetas}
+  \item Premio a la mejor presentación en el hackatón de proyectos --- EPIC
+        VI, Escuela de Programación para la Investigación Científica (Quito,
+        Ecuador, 2026).
+  \item Primer lugar --- UTMACH Challenge, Universidad Técnica de Machala
+        (Machala, Ecuador, 2024).
+  \item Primer lugar --- Fall AI Project Competition, Microsoft Learn Student
+        Ambassadors (2024).
+  \item Resumen extendido seleccionado y premio a la mejor presentación en la
+        sesión de estudiantes de pregrado --- LatinX in CV, congreso CVPR
+        (Seattle, Estados Unidos, 2024).
+  \item Propuesta de investigación seleccionada y beca de participación ---
+        TaReCDa/ReWARDS (Machala, Ecuador, 2023).
+  \item Becas competitivas de formación y participación: programa Especialista
+        en Decisiones Basadas en Datos, ESPOL (Guayaquil, Ecuador); beca de
+        viaje y alojamiento, FGV EMAp (Río de Janeiro, Brasil, 2025); beca de
+        participación, KHIPU 2025, Encuentro Latinoamericano de Inteligencia
+        Artificial (Santiago, Chile); beca de viaje e inscripción, Computer
+        Vision Foundation (Seattle, Estados Unidos, 2024).
+\end{vinetas}
+
+% ============================ HABILIDADES ==================================
+\section*{HABILIDADES}
+
+\begin{tabular*}{\textwidth}{@{}p{0.22\textwidth}@{}p{0.78\textwidth}@{}}
+  \textbf{Competencias} & Representación estudiantil, facilitación de talleres,
+                          trabajo en equipos multiculturales y comunicación de
+                          resultados técnicos a públicos no especializados. \\[3pt]
+  \textbf{Datos} & Análisis de datos públicos y gubernamentales, estadística
+                   aplicada, análisis geoespacial y visualización de datos
+                   (Power BI). \\[3pt]
+  \textbf{Tecnología} & Python, SQL, aprendizaje automático (\textit{machine
+                        learning}) y visión por computadora. \\[3pt]
+  \textbf{Idiomas} & Español (nativo), inglés (C1), portugués (B1). \\
+\end{tabular*}
+
+\end{document}

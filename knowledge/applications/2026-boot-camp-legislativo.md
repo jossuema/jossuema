@@ -19,8 +19,8 @@
 | Copia de cédula o pasaporte vigente | TODO(jossuema) |
 | Foto tipo carnet / retrato profesional (JPG o PNG) | TODO(jossuema) — ver [`../media/README.md`](../media/README.md) |
 | Documento que acredite la condición declarada (certificado de matrícula) | TODO(jossuema): solicitar en UTMACH |
-| Carta de motivación (máx. 1 página) | TODO(jossuema) — borrador en [`../statements/`](../statements/) |
-| Video de presentación (máx. 1 minuto) | TODO(jossuema) |
+| Carta de motivación (máx. 1 página, PDF, máx. 3 MB) | ✅ [PDF](2026-boot-camp-legislativo/carta-motivacion.pdf) · [Word](2026-boot-camp-legislativo/carta-motivacion.docx) · [fuente](2026-boot-camp-legislativo/carta-motivacion.md) |
+| Video de presentación (máx. 1 minuto) | ✅ grabado (guion en la carta fuente) |
 | Acuerdos firmados (uso de imagen y compromiso de asistencia) | Al ser admitido |
 
 ## Estrategia del CV para esta convocatoria
